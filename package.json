@@ -1,0 +1,31 @@
+{
+  "name": "streamify-node",
+  "version": "1.0.0",
+  "description": "streamify project that give through endpoint",
+  "main": "app.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon ./server/app.js",
+    "format": "prettier --write 'server/**/*.js'",
+    "start": "cross-env NODE_ENV=production node ./server/app.js"
+  },
+  "private": true,
+  "keywords": [
+    "node",
+    "express"
+  ],
+  "author": "Josue Rojas",
+  "contributors": [
+    "Josue Rojas <sjosuerojasc@gmail.com>"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1"
+  },
+  "dependencies": {
+    "cors": "2.8.5",
+    "express": "4.17.2",
+    "morgan": "1.10.0"
+  }
+}
